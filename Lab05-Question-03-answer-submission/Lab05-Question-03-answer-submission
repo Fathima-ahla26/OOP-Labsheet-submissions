@@ -1,0 +1,87 @@
+# Lab 05 – Question 03
+
+Noun-Verb Analysis
+
+### (a) Identify all the nouns which can be potential classes.
+
+The following nouns are identified from the given problem description:
+
+1. Online bookshop
+2. Books
+3. Magazines
+4. CDs
+5. Products
+6. Price
+7. Title
+8. Author
+9. Number of pages
+10. Artists
+11. Type
+12. Customers
+13. Registered customers
+14. Personal customers
+15. Business customers
+16. Orders
+17. Shipments
+18. Store
+19. Products ordered
+20. Payments
+21. Credit cards
+22. Invoices
+23. Contact information
+24. Personal information
+25. Authentication
+26. Delivery
+27. Reports
+
+### (b) Identify the set of potential classes and show clearly how the nouns were rejected using the five rules.
+
+The five rejection rules are applied to identify the suitable classes.
+
+| Noun                 | Decision | Reason                           |
+| -------------------- | -------- | -------------------------------- |
+| Online bookshop      | Rejected | Represents the entire system     |
+| Books                | Accepted | Potential class                  |
+| Magazines            | Accepted | Potential class                  |
+| CDs                  | Accepted | Potential class                  |
+| Products             | Accepted | Common parent class              |
+| Price                | Rejected | Attribute of Product             |
+| Title                | Rejected | Attribute of Product             |
+| Author               | Rejected | Attribute of Book                |
+| Number of pages      | Rejected | Attribute of Book                |
+| Artists              | Rejected | Attribute of CD                  |
+| Type                 | Rejected | Attribute of Product             |
+| Customers            | Accepted | Potential class                  |
+| Registered customers | Rejected | Redundant with Customers         |
+| Personal customers   | Accepted | Type of Customer                 |
+| Business customers   | Accepted | Type of Customer                 |
+| Orders               | Accepted | Potential class                  |
+| Shipments            | Accepted | Potential class                  |
+| Store                | Rejected | Irrelevant to the system         |
+| Products ordered     | Rejected | Redundant with Product and Order |
+| Payments             | Accepted | Potential class                  |
+| Credit cards         | Accepted | Represents a payment method      |
+| Invoices             | Accepted | Potential class                  |
+| Contact information  | Rejected | Attribute of Customer            |
+| Personal information | Rejected | Attribute of Customer            |
+| Authentication       | Rejected | Represents a process             |
+| Delivery             | Rejected | Process represented by Shipment  |
+| Reports              | Accepted | Potential class                  |
+
+### Final set of potential classes
+
+After applying the five rejection rules, the identified potential classes are:
+
+1. Product
+2. Book
+3. Magazine
+4. CD
+5. Customer
+6. PersonalCustomer
+7. BusinessCustomer
+8. Order
+9. Shipment
+10. Payment
+11. CreditCard
+12. Invoice
+13. Report
